@@ -1,11 +1,11 @@
 
 # Sistema de controle de acesso em RestAPI
 
-O sistema foi desenvolvido em Springboot with Maven e funciona da seguinte maneira: Atraves de uma aplicacao front-end faz a requisicao com o Cracha do usuario que por padrao foi desenvolvido no sistema "FLN9999999BR" sendo FLN a Filial e BR, os numeros o id do cadastro do funcionario e BR o pais.
-ao fazer a requisicao, retorna-se um Json informando se o usuario iniciou a jornada de servico, se foi para o descanso, se terminou o descanso ou se terminou a jornada de servico.
-Tambem tem tratamento de excecoes para caso o usuario nao cumpra a jornada de servico minima de oito horas/dia.
-Cada usuario contem, alem de suas informacoes e cargos, uma lista de advertencia e uma lista de "atitudes positivas" onde estas duas formam uma media da nota do funcionario.
-Todo o resumo do funcionario, bem como suas faltas e atrasos, podem ser verificados via RestAPI tambem utilizando a requisicao /worker/{cracha}
+Este sistema de controle de acesso de funcionários é uma aplicação de API Rest desenvolvida em Java, utilizando o framework Spring Boot.
+Através desta API, é possível realizar o cadastro de usuários, funcionários, departamentos e acessos. Cada funcionário possui um departamento ao qual está vinculado e a API permite que sejam atribuídos diferentes níveis de acesso aos funcionários, de acordo com suas funções na empresa.
+A autenticação é realizada por meio de token JWT (JSON Web Token), que é gerado quando o usuário realiza login com suas credenciais. Com este token, é possível acessar as rotas protegidas da API e realizar operações como cadastrar, editar e excluir registros.
+Além disso, a API permite que seja consultado um relatório com a lista de todos os acessos realizados pelos funcionários, com informações como data, hora e departamento em que ocorreu o acesso.
+Em resumo, este sistema de controle de acesso de funcionários é uma solução completa para gerenciar o acesso de funcionários a determinados setores da empresa, proporcionando maior segurança e controle de informações sensíveis.
 
 
 ## Autores
